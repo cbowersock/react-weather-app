@@ -47,6 +47,7 @@ const Form = () => {
                     type="radio"
                     id="imperial"
                     name="units"
+                    checked
                     onClick={handleClick}>
                 </input>
                 <br/>
