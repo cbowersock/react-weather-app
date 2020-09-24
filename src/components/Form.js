@@ -9,6 +9,7 @@ const Form = () => {
     const [unit, setUnit] = useState('imperial');
 
 	const handleChange = event => {
+        event.preventDefault();
         setUserInput(event.target.value);
     };
 
@@ -47,7 +48,7 @@ const Form = () => {
                     type="radio"
                     id="imperial"
                     name="units"
-                    checked
+                    defaultChecked
                     onClick={handleClick}>
                 </input>
                 <br/>
